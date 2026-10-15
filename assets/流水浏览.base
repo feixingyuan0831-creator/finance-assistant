@@ -1,0 +1,16 @@
+filters:
+  and:
+    - 'file.inFolder("交易明细")'
+views:
+  - type: table
+    name: 全部流水
+    order:
+      - date
+      - note
+      - category
+      - kind
+      - amount
+      - currency
+    sort:
+      - property: date
+        direction: DESC

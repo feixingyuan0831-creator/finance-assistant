@@ -1,0 +1,15 @@
+{
+  "integration": "finance-assistant/local-files",
+  "ledger": "脱敏流水.csv",
+  "homepage": "财务首页.md",
+  "account_tracking": "aggregate_cash",
+  "require_payment_account": false,
+  "cash_label": "日常及储蓄余额",
+  "cash_scope": "待用户确认",
+  "cash_baseline": {"confirmed": false, "amount": null, "as_of": null, "included_transaction_ids": []},
+  "cash_delta_by_id": {},
+  "monthly_reconciled": {},
+  "goals": [],
+  "receipt_fields": ["今日已记录支出", "本月已记录支出", "日常及储蓄余额"],
+  "investment_output_order": ["适合度", "关键风险", "目标影响", "证据与细节"]
+}

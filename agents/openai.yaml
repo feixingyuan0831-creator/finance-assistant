@@ -1,0 +1,6 @@
+interface:
+  display_name: "财务助手"
+  short_description: "研究生中文记账、应急金、预算、储蓄目标、月报与A股稳健投资研究"
+  default_prompt: "请使用 $finance-assistant 帮我梳理财务状况，先核对收支、应急金和储蓄目标，再研究长期闲置资金。"
+policy:
+  allow_implicit_invocation: true
