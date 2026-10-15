@@ -15,6 +15,21 @@
 
 自然语言理解、账单分类和研究由宿主Agent完成；Python脚本负责留空建库和确定性同步。它不是独立手机App，不连接银行、券商或微信，不自动下单、不默认后台运行。已有微信宿主可另行授权接入同一账本，见[接入边界](references/obsidian-local-vault.md)。
 
+## 借鉴的 Skills 与项目
+
+感谢以下作者与开源项目。本项目在通用财务工作流基础上，加入中文研究生预算、储蓄目标、资产分组和本地记账规则；各来源与本发布版的关系如下。
+
+| 名称 | 作者／来源 | 本项目中的使用方式 |
+|---|---|---|
+| **Emergency Fund**（应急备用金） | Open Accountant · [openaccountant/skills](https://github.com/openaccountant/skills/tree/f5abe381f24b5b7d59f1d0b4a825b14494ff2034/personal/emergency-fund) | 中文改编，用于应急金目标、存款可用性及生活费覆盖期评估；保留 MIT 许可 |
+| **Budget Builder**（预算制定） | Alexander Ouellet · [SkillMedev/skills](https://github.com/SkillMedev/skills/tree/6b3044d569595b481a3677da8f68af7aa239dc09/skills/budget-builder) | 中文改编，用于固定、浮动及一次性收入的月度预算；保留 MIT 许可 |
+| **Financial Goals**（财务目标） | Open Accountant · [openaccountant/skills](https://github.com/openaccountant/skills/tree/f5abe381f24b5b7d59f1d0b4a825b14494ff2034/personal/financial-goals) | 中文改编，用于毕业、学费与其他专项储蓄目标；保留 MIT 许可 |
+| **Asset Allocation**（资产配置） | Henry Wen · [henrywen98/asset-allocation](https://github.com/henrywen98/asset-allocation/tree/96507e725f950242586f05567fe4fac2d775265d) | 改编资产配置研究流程，保留 MIT 许可；未打包上游回测引擎 |
+| **Obsidian Personal Finance Tracker** | [lovepigpanda/obsidian-personal-finance-tracker](https://github.com/lovepigpanda/obsidian-personal-finance-tracker) | 独立 Obsidian 项目，仅参考产品思路；本包同步器独立实现，未分发其实现 |
+| **Stock Analytics Skill** | [belos-street/stock-analytics-skill](https://github.com/belos-street/stock-analytics-skill) | 历史本地版本曾参考；因上游许可表述冲突，公开版未分发其代码、原文或改编模块，相关研究说明独立编写 |
+
+完整版本记录、版权和分发边界见 [SOURCES.md](SOURCES.md) 与 [licenses/](licenses/)。列出来源不代表原作者对本项目提供背书。
+
 ## 安装
 
 下载仓库ZIP并解压，把包含 `SKILL.md` 的 `finance-assistant` 文件夹放到宿主技能目录。不要把真实账本放在本仓库中。
